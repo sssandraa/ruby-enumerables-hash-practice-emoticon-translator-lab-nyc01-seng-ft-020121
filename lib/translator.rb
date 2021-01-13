@@ -13,11 +13,7 @@ new_hash
 end
 
 def get_japanese_emoticon(file_path, emoticon)
-result = load_library(file_path)["get_emoticon"][emoticon]
-if result
-  result
-else
-return "Sorry, that emoticon was not found."
+library = load_library(file_path)
 end
 end
 
